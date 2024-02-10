@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<h1>Calculate Lesson Costs</h1>
+
+<label for="hours">Enter number of hours:</label>
+<input type="number" id="hours" min="0">
+<br>
+<div>
+    <label>Hourly rate: </label>
+    <span style="font-size:larger;">$</span><span id="hourly-rate" style="font-size:larger;">25.00</span>
+</div>
+
+<br>
+<button id="calculate">Calculate Total</button>
+<br>
+<label for="total">Total:</label>
+<span style="font-size:larger;">$</span>
+<input type="text" id="total" readonly>
+
+<script src="~/js/site.js"></script>
